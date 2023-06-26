@@ -11,101 +11,119 @@
 </head>
 
 <body>
-    <main class="flex relative w-screen h-96">
+    <main class="flex relative w-screen h-[500px] md:h-[500px]">
         <img src="https://assets.nflxext.com/ffe/siteui/vlv3/530fc327-2ddb-4038-a3f0-2da2d9ccede1/9c547c8a-e707-4bdb-bdbc-843f134dd2a6/IN-en-20230619-popsignuptwoweeks-perspective_alpha_website_small.jpg"
-            class="brightness-50 object-cover">
+            class="brightness-50 object-cover w-screen">
         <div class="flex flex-col absolute items-center text-white text-center">
-            <div class="flex justify-between h-12 py-1 px-5 items-center w-screen">
+            <div class="flex justify-between h-auto py-1 px-5 items-center w-screen md:h-auto">
                 <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png" class="brightness-125 h-16">
                 <div class="flex text-sm gap-2 items-center">
-                    <button class="border-[1px] border-white bg-transparent flex gap-3 px-3 py-1 rounded-sm text-center">
+                    <button
+                        class="border-[1px] border-white/50 bg-transparent flex gap-3 px-3 py-2 rounded-sm text-center items-center md:py-1">
                         <i class="fa-solid fa-globe"></i>
+                        <span class="hidden md:visible md:block md:text-lg">English</span>
                         <i class="fa-solid fa-caret-down"></i>
                     </button>
-                    <button class="bg-red-600 py-1 px-3 font-medium rounded-md hover:bg-red-700">Sign In</button>
+                    <button class="bg-red-600 py-2 px-3 font-medium rounded-md hover:bg-red-700 md:px-4">Sign
+                        In</button>
                 </div>
             </div>
-            <h1 class="font-bold mt-7 text-3xl mb-4 mx-5">Unlimited movies, TV shows and more</h1>
-            <p>Watch anywhere. Cancel anytime.</p>
-            <form class="flex flex-col mt-5 gap-3">
-                <p class="px-10">Ready to watch? Enter your email to create or restart your membership.</p>
-                <input type="email" placeholder="Email address" class="px-3 mx-10 py-2 text-sm rounded-md bg-black/60 border-[1px] border-white/50">
-                <button type="submit" class="bg-red-600 self-center px-4 py-2 rounded-md hover:bg-red-700">
-                    <span>Get Started</span>
-                    <i class="fa-solid fa-angle-right"></i>
-                </button>
-            </form>
+            <div class="md:py-20 md:px-12 md:mb-4 text-xl">
+                <h1 class="font-bold mt-10 text-3xl mb-4 mx-5 md:text-4xl md:mt-2">Unlimited movies, TV shows and more</h1>
+                <p class="md:text-xl">Watch anywhere. Cancel anytime.</p>
+                <form class="flex flex-col mt-5 gap-4">
+                    <p class="px-10">Ready to watch? Enter your email to create or restart your membership.</p>
+                    <div class="flex gap-4 flex-col md:flex md:gap-2 md:px-11 md:flex-row">
+                        <input type="email" placeholder="Email address"
+                            class="px-3 mx-12 py-3 text-sm rounded-md bg-black/60 border-[1px] border-white/50 md:flex-1 md:mx-0 md:text-lg">
+                        <button type="submit"
+                            class="bg-red-600 self-center px-7 py-3 rounded-md hover:bg-red-700 md:px-7 md:py-3 md:font-bold md:text-2xl">
+                            <span>Get Started</span>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
     </main>
-    <hr class="bg-gray-600 h-2">
-    <section class="flex flex-col bg-black text-white items-center py-8 text-center relative px-4">
-        <h2 class="text-2xl font-bold mb-4">Enjoy on your TV</h2>
-        <p class="mb-4">Watch on your smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
-        <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" class="h-56 z-50">
-        <img src="https://i.gifer.com/H95B.gif" class="absolute top-48 w-56 h-40">
+    <hr class="bg-gray-600 h-1">
+    <section class="flex flex-col bg-black text-white items-center py-16 text-center relative px-4">
+        <h2 class="text-3xl font-bold mb-4">Enjoy on your TV</h2>
+        <p class="mb-4 text-lg">Watch on your smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and
+            more.</p>
+        <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
+            class="z-50">
+        <img src="https://i.gifer.com/H95B.gif" class="absolute top-60 h-48 w-auto md:h-72">
     </section>
-    <hr class="bg-gray-600 h-2">
-    <section class="flex flex-col bg-black text-white items-center py-8 text-center px-4">
-        <h2 class="text-2xl font-bold mb-4">Download your shows to watch offline</h2>
-        <p class="mb-4 px-2">Save your favourites easily and always have something to watch.</p>
-        <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" class="h-56">
+    <hr class="bg-gray-600 h-1">
+    <section class="flex flex-col bg-black text-white items-center py-16 text-center px-4 md:px-6">
+        <h2 class="font-bold mb-4 text-3xl">Download your shows to watch offline</h2>
+        <p class="mb-4 px-2 text-lg">Save your favourites easily and always have something to watch.</p>
+        <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg"
+            class="md:h-auto">
     </section>
-    <hr class="bg-gray-600 h-2">
-    <section class="flex flex-col bg-black text-white items-center py-8 text-center relative px-4">
-        <h2 class="text-2xl font-bold mb-4">Watch everywhere</h2>
-        <p class="mb-6">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
-        <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png" class="h-56 z-50">
-        <img src="https://media.giphy.com/media/cIjWxVnBr0vJLD3YYu/giphy.gif" class="absolute top-44 w-40 h-28">
+    <hr class="bg-gray-600 h-1">
+    <section class="flex flex-col bg-black text-white items-center py-16 text-center relative px-4 md:px-6">
+        <h2 class="font-bold mb-4 text-3xl">Watch everywhere</h2>
+        <p class="mb-6 text-lg">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+        <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png"
+            class="z-50">
+        <img src="https://media.giphy.com/media/cIjWxVnBr0vJLD3YYu/giphy.gif"
+            class="absolute top-56 h-32 w-auto md:h-56">
     </section>
-    <hr class="bg-gray-600 h-2">
-    <section class="flex flex-col bg-black text-white items-center py-8 text-center px-4">
-        <h2 class="text-2xl font-bold mb-4">Create profiles for kids</h2>
-        <p class="mb-4">Send children on adventures with their favourite characters in a space made just for them—free with your membership.</p>
-        <img src="https://occ-0-4409-2164.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABVr8nYuAg0xDpXDv0VI9HUoH7r2aGp4TKRCsKNQrMwxzTtr-NlwOHeS8bCI2oeZddmu3nMYr3j9MjYhHyjBASb1FaOGYZNYvPBCL.png?r=54d" class="h-56">
+    <hr class="bg-gray-600 h-1">
+    <section class="flex flex-col bg-black text-white items-center py-16 text-center px-4 md:px-10">
+        <h2 class="font-bold mb-4 text-3xl">Create profiles for kids</h2>
+        <p class="mb-4 text-lg">Send children on adventures with their favourite characters in a space made just for
+            them—free with your membership.</p>
+        <img src="https://occ-0-4409-2164.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABVr8nYuAg0xDpXDv0VI9HUoH7r2aGp4TKRCsKNQrMwxzTtr-NlwOHeS8bCI2oeZddmu3nMYr3j9MjYhHyjBASb1FaOGYZNYvPBCL.png?r=54d">
     </section>
-    <hr class="bg-gray-600 h-2">
-    <section class="flex flex-col bg-black text-white py-8 text-center px-5 gap-2">
-        <h2 class="text-2xl font-bold mb-4 mx-8">Frequently asked questions</h2>
-        <button class="px-4 bg-gray-700 py-4 flex justify-between items-center hover:bg-gray-600">
+    <hr class="bg-gray-600 h-1">
+    <section class="flex flex-col bg-black text-white text-center px-5 gap-2 py-16 text-lg md:px-8">
+        <h2 class="font-bold mb-4 mx-4 text-4xl md:mb-6">Frequently Asked Questions</h2>
+        <button class="px-6 bg-gray-700 py-5 flex justify-between items-center hover:bg-gray-600">
             <span>What is Netflix?</span>
             <i class="fa-solid fa-plus"></i>
         </button>
-        <button class="px-4 bg-gray-700 py-4 flex justify-between items-center hover:bg-gray-600">
+        <button class="px-6 bg-gray-700 py-5 flex justify-between items-center hover:bg-gray-600">
             <span>How much does Netflix cost?</span>
             <i class="fa-solid fa-plus"></i>
         </button>
-        <button class="px-4 bg-gray-700 py-4 flex justify-between items-center hover:bg-gray-600">
+        <button class="px-6 bg-gray-700 py-5 flex justify-between items-center hover:bg-gray-600">
             <span>Where can I watch?</span>
             <i class="fa-solid fa-plus"></i>
         </button>
-        <button class="px-4 bg-gray-700 py-4 flex justify-between items-center hover:bg-gray-600">
+        <button class="px-6 bg-gray-700 py-5 flex justify-between items-center hover:bg-gray-600">
             <span>How do I cancel?</span>
             <i class="fa-solid fa-plus"></i>
         </button>
-        <button class="px-4 bg-gray-700 py-4 flex justify-between items-center hover:bg-gray-600">
+        <button class="px-6 bg-gray-700 py-5 flex justify-between items-center hover:bg-gray-600">
             <span>What can I watch on Netflix?</span>
             <i class="fa-solid fa-plus"></i>
         </button>
-        <button class="px-4 bg-gray-700 py-4 flex justify-between items-center hover:bg-gray-600">
+        <button class="px-6 bg-gray-700 py-5 flex justify-between items-center hover:bg-gray-600">
             <span>Is Netflix good for kids?</span>
             <i class="fa-solid fa-plus"></i>
         </button>
         <form class="flex flex-col mt-8 gap-5">
-            <p class="mx-8">Ready to watch? Enter your email to create or restart your membership.</p>
-            <input type="email" placeholder="Email address" class="px-3 mx-10 py-2 text-sm rounded-md bg-gray-700/30 border-[1px] border-white/50">
-            <button type="submit" class="bg-red-600 self-center px-4 py-2 rounded-md hover:bg-red-700">
-                <span>Get Started</span>
-                <i class="fa-solid fa-angle-right"></i>
-            </button>
+            <p class="mx-10">Ready to watch? Enter your email to create or restart your membership.</p>
+            <div class="flex flex-col gap-5 md:flex-row md:px-28 md:gap-2">
+                <input type="email" placeholder="Email address"
+                    class="px-4 mx-10 py-2 rounded-md bg-gray-700/30 border-[1px] border-white/50 md:text-lg flex-1 md:mx-0">
+                <button type="submit" class="bg-red-600 self-center px-4 py-2 rounded-md hover:bg-red-70 md:text-2xl font-bold md:px-6 md:py-3">
+                    <span>Get Started</span>
+                    <i class="fa-solid fa-angle-right"></i>
+                </button>
+            </div>
         </form>
     </section>
-    <hr class="bg-gray-600 h-2">
+    <hr class="bg-gray-600 h-1">
     <nav class="flex flex-col bg-black text-white px-7 py-6 text-sm">
         <div class="flex gap-2 mb-8">
             <span>Questions? Call</span>
             <button class="underline">000-800-919-1694</button>
         </div>
-        <ul class="flex flex-col flex-wrap underline gap-4 h-72 mb-5">
+        <ul class="flex flex-col flex-wrap underline gap-4 h-72 mb-5 md:h-36">
             <li>FAQ</li>
             <li>Account</li>
             <li>Investor Relations</li>
@@ -122,7 +140,7 @@
             <li>Contact us</li>
             <li>Legal Notices</li>
         </ul>
-        <button class="border-[1px] border-white bg-transparent flex gap-3 px-3 py-2 rounded-sm text-center w-28 mb-5">
+        <button class="border-[1px] border-white bg-gray-500/10 flex gap-3 justify-center py-2 rounded-sm text-center w-32 mb-5 items-center">
             <i class="fa-solid fa-globe"></i>
             <span>English</span>
             <i class="fa-solid fa-caret-down"></i>
