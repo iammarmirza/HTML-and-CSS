@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/aa80c927ac.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Netflix</title>
+    <link rel="icon" type="image/x-icon" href="Images/favicon.ico">
+</head>
+<body>
+    <main class="flex flex-col px-2 w-screen h-[600px] bg-black">
+        <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png" class="h-14 w-24">
+        <form class="flex flex-col mt-3 px-3 gap-4">
+            <h1 class="font-bold text-3xl text-white mb-4">Sign In</h1>
+            <input type="email" placeholder="Email or phone number" class="px-5 py-4 bg-gray-700 text-sm rounded-md">
+            <input type="password" placeholder="Password" class="px-5 py-4 bg-gray-700 text-sm rounded-md mb-4">
+            <button type="submit" class="bg-red-600 text-white font-bold py-3 rounded-md hover:bg-red-700">Sign In</button>
+            <div class="flex justify-between mb-4">
+                <div class="flex gap-2 items-center">
+                    <input type="checkbox" class="w-4 h-4">
+                    <label for="checkbox" class="text-white/70 text-sm">Remember me</label>
+                </div>
+                <button class="text-white/70 hover:underline text-sm">Need help?</button>
+            </div>
+            <div class="flex gap-1">
+                <span class="text-white/40">New to Netflix?</span>
+                <button class="text-white font-semibold hover:underline">Sign up now.</button>
+            </div>
+            <p class="text-white/40 text-sm">This page is protected by Google reCAPTCHA to ensure you're not a bot. <button class="text-blue-500">Learn more.</button></p>
+        </form>
+    </main>
+    <hr class="bg-gray-700 h-1">
+    <nav class="flex flex-col bg-black h-72 text-white/40 px-5 py-5 gap-8">
+        <div class="flex gap-1">
+            <span>Questions? Call</span>
+            <button class="hover:underline">000-800-919-1694</button>
+        </div>
+        <ul class="flex flex-col flex-wrap gap-3 text-sm h-24">
+            <li class="hover:underline">FAQ</li>
+            <li class="hover:underline">Terms of Use</li>
+            <li class="hover:underline">Cookie Prferences</li>
+            <li class="hover:underline">Help Centre</li>
+            <li class="hover:underline">Privacy</li>
+            <li class="hover:underline">Corporate Information</li>
+        </ul>
+        <button class="flex px-2 py-3 border-[1px] border-white/40 w-28 text-sm justify-center items-center gap-2">
+            <i class="fa-solid fa-globe"></i>
+            <span>English</span>
+            <i class="fa-solid fa-caret-down"></i>
+        </button>
+    </nav>
+    
+</body>
+</html>
